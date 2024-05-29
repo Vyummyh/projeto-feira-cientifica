@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(211, 141, 10, 0.267);
+}
+
+.card {
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1000px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+    transition: 0.3s;
+}
+
+.card:hover {
+    width: 1200px;
+    transition: 0.4s;
+}
+
+.card .band-img{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 0px;
+}
+
+
+.card .img img {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px ;
+}
+.card:hover .img img {
+    width: 40%;
+    transition: 0.4s;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    position: relative;
+    top: 48%;
+    left: 26%;
+    height: 100%;
+    width: 100%;
+    padding: 0px 30px;
+    height: 47px;
+    margin-right: 236px;
+    overflow: hidden;
+    
+}
+
+.card:hover .content {
+    left: 7%;
+    overflow: visible;
+    justify-content: center;
+    margin-left: 35%;
+    text-align: justify;
+    top: 7%;
+    height: 200px;
+    align-items: start;
+}
+
+/*  BOTÃO  */
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card:hover h2 {
+    padding: 20px;
+}
+
+.card .iniciar {
+    background-color:  rgba(247, 244, 42, 0.425);
+    padding: 12px;
+    color: #181010;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #caad09;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.459)
+}
+
+.botao:hover {
+    box-shadow: 2px 2px 7px  #caad09;
+    color:  #ebe8dd;
+}
+
+.link {
+    text-decoration: none;
+    color: #2e2e2ec2;
+    display: flex;
+    text-align: end;
+    justify-content: end;   
+}
+
+ /* === FOOTER ===  */
+
+/* FOOTER */
+.links {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 10px 2% 5px 10px;
+    width: 100%;
+    text-align: end;
+    justify-content: end;
+}
+
+.face-link, .insta-link{
+    width: auto;
+    height: auto;
+    margin: 5px 1px 1px 9px;
+}
+
+.face-img, .insta-img {
+    width: 30px;
+    height: 30px;
+    padding-top: 1px;
+}
+
+footer > strong {
+    padding-top: 9px;
+    border-right:solid 1px gray;
+    padding-right: 14px;
+}
+
+
+/* ==== RESPONSIVIDADE ====  */
+
+@media only screen and (max-width: 1200px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        height: 500px;
+        position: relative;
+    }
+    .card:hover {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+        position: relative;
+    }
+
+    
+    .card .band-img {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        top: 0px;
+    }
+    .card:hover .band-img {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        top: 0px;
+    }
+    
+
+    .card .img img {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px ;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+    .card:hover .img img {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px ;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .card .content {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        height: 0px;
+        left: 0%;
+        overflow: visible;
+    }
+    .card:hover .content {
+        top: 56.3%;
+        left: 0%;
+        text-align: center;
+        margin-left: 0%;
+        align-items: center;
+    }
+    .card:hover h2 {
+        padding: 0px;
+    }
+    
+    .card:hover .botao {
+        padding: 10px 31.6%;
+    }
+}

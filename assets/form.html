@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styleform.css">
+    <link rel="shortcut icon" href="/assets/img/luz-para-todos.png" type="image/x-icon">
+    <title>Ouvidoria Luz-MG</title>
+</head>
+
+<body>
+    <header class="logo">
+        <img src="/assets/img/luz-para-todos.png">
+    </header>
+    <main>
+            <h1>Ouvidoria Luz-MG</h1>
+        <form action="https://api.staticforms.xyz/submit" method="post" class="">
+            <input type="hidden" name="accessKey" value="ff0ea7bc-298b-4e7e-9209-6ce34c1dee95">
+            <input type="hidden" name="redirectTo" href="/assets/form.html">
+        <!-- Colocar a "href" como link de redirecionamento a propria página após subi-la -->
+
+            <label for="inputNome">Nome:</label>
+            <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2"
+                    placeholder="Digite o seu nome">
+            <span></span>
+            <br><br>
+            <label for="inputNome">Telefone:</label>
+            <input type="text" id="inputCell" name="phone" maxlength="25" minlength="2"
+                    placeholder="Digite o seu número">
+            <span></span>
+            <br><br>
+            <label for="inputEmail">E-mail:</label>
+            <input type="email" id="inputEmail" name="email" required maxlength="50" placeholder="Digite o seu e-mail">
+            <p class="aviso"> Caso não possua, digite naotenho@gmai.com</p>
+            <span></span>
+            <br><br>
+            <label for="textDescricao">Descrição:</label>
+            <br><br>
+            <textarea name="message" id="textDescricao" required maxlength="1000"></textarea>
+            <span></span>
+            <br><br>
+            <label>Anexo: <input class="arquivo-btn" type="file" name="image"><img class="download" src="/assets/img/download.png" alt=""></label>
+            <br><br>
+            <button class="enviar-btn" type="submit" value="Submit" onclick="aoClicarNoBotao()">Enviar</button>
+            <Button class="limpar-btn" type="reset">Limpar</Button>
+        </form>
+    </main>
+    <footer class="links">
+        <strong>
+            <p>(37)3421-3030</p>
+        </strong>
+        <a class="face-link" target="_blank" href="https://www.facebook.com/prefeituradeluz">
+            <img class="face-img" src="/assets/img/facebook.png">
+        </a>
+        <a class="insta-link" target="_blank" href="https://www.instagram.com/prefeituradeluz/">
+            <img class="insta-img" src="/assets/img/instagram.png">
+        </a>
+    </footer>
+    <script src="/assets/javaScript/json.js"></script>
+</body>
+</html>
